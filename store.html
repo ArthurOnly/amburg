@@ -18,22 +18,22 @@
 <body>
     <main>
         <header>
-            <nav>
+            <nav id="nav-toggler">
                 <h2>
                     <i class="fas fa-hamburger"></i> ABURG
-                </h2>
+                </h2>               
                 <h2 class="mobile-only">
                     <i class="fas fa-bars"></i>
                 </h2>
                 <ul class="desktop-only">
-                    <li><a href="#">Perfil</a></li>
-                    <li><a href="#">Minhas compras</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Minhas compras</a></li>
                     <li><a href="/"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
                 </ul>
                 <ul class="mobile-menu mobile-only">
                     <div>
-                        <li><a href="#">Perfil</a></li>
-                        <li><a href="#">Minhas compras</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Minhas compras</a></li>
                         <li><a href="/"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
                     </div>
                 </ul>
@@ -42,6 +42,32 @@
         <section class="products-section">
             <h1>Mais pedidos</h1>
             <div class="row">
+                <div class="product-card">
+                    <div class="wrapper">
+                        <img src="images/amburg.jpg" class="image"/>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <h1>X BURGUER</h1>
+                            <h2>R$ 15.00</h2>
+                        </div>
+                        <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
+                        <button class="primary w-full"><i class="fas fa-shopping-cart"></i> ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="wrapper">
+                        <img src="images/amburg.jpg" class="image"/>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <h1>X BURGUER</h1>
+                            <h2>R$ 15.00</h2>
+                        </div>
+                        <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
+                        <button class="primary w-full">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
                 <div class="product-card">
                     <div class="wrapper">
                         <img src="images/amburg.jpg" class="image"/>
@@ -128,5 +154,29 @@
             </div>
         </section>
     </main>
+
+    <div class="buy-footer">
+        <div>
+            <h1>Total: <strong>R$ 27.00</strong></h1>
+            <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        const toggler = document.querySelector("#nav-toggler")
+        const navMobile = document.querySelector(".mobile-menu")
+
+        toggler.onclick = () => {
+            if (navMobile.classList.contains('active')) navMobile.classList.remove('active')
+            else navMobile.classList.add('active')
+        }
+
+    </script>
 </body>
 </html>
