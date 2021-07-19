@@ -1,3 +1,22 @@
+@media screen and (min-width: 1024px){
+    body .mobile-only{
+        display: none;
+    }
+    
+    body .desktop-only{
+        display: initial;
+    }
+}
+
+.mobile-only{
+    display: flex;
+}
+
+.desktop-only{
+    display: none;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +31,58 @@
     --xxlg-space: 64px;
 
     --color-primary: #D21B26;
+    --color-primary-light: #f2333e;
 }
+
+body{
+    background-color: #F2F2F2;
+}
+
+/*nav*/
+nav{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--xlg-space);
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    padding: var(--md-space) var(--xlg-space);
+    border-radius: var(--lg-space);
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    background-color: var(--color-primary-light);
+}
+
+nav .mobile-menu{
+    position: absolute;
+    width: 85%;
+}
+
+nav .mobile-menu div{
+    transform: translateY(70%);
+    display: flex;
+    flex-direction: column;
+    gap: var(--xlg-space);
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: var(--xlg-space) 0;
+}
+
+/*/
 
 /*Global*/
 .primary{
@@ -40,6 +110,12 @@ button{
     padding: var(--md-space) var(--sm-space);
     border-radius: var(--sm-space);
     background-color: var(--color-primary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    filter: brightness(110%);
 }
 
 /*Global*/
