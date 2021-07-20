@@ -86,12 +86,18 @@ nav .mobile-menu div{
     overflow: hidden;
     transition: 0.2s;
     height: 100%;
+    z-index: 2;
 }
 
 nav .mobile-menu.active div{
     max-height: 250px;
     overflow: hidden;
     padding: var(--xlg-space) 0;
+}
+
+section > h1,
+.products-section > h1{
+    font-size: 2.5rem;
 }
 
 /*/
@@ -110,6 +116,7 @@ nav .mobile-menu.active div{
     display: flex;
     flex-direction: column;
     gap:var(--sm-space);
+    position: relative;
 }
 input{
     padding: var(--md-space) var(--sm-space);

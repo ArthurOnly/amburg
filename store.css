@@ -7,19 +7,18 @@
 }
 
 .product-card .image{
-    width: 100%;
-    max-width: 250px;
+    height: 100%;
     transition: 0.2s;
 }
 
 .product-card .wrapper{
     overflow: hidden;
-    width: 100%;
-    max-width: 250px;
+    width: 248px;
+    height: 248px;
 }
 
 .product-card:hover{
-    transform: translateY(-5%);
+    transform: translateY(-2%);
 }
 
 .product-card .wrapper:hover .image{
@@ -30,6 +29,8 @@
     padding: var(--lg-space);
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    color: #000;
     gap: var(--lg-space);
 }
 
@@ -75,6 +76,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    overflow: hidden;
+    max-height: 0;
 }
 
 .buy-footer > div{
@@ -102,3 +105,68 @@
 }
 /**/
 
+/*Search*/
+section.search{
+    padding: var(--xlg-space) var(--lg-space);
+    width: 100%;
+    max-width: 1124px;
+    margin: auto;
+}
+
+section input{
+    border-radius: var(--xlg-space);
+    padding: var(--lg-space);
+    padding-left: 48px;
+    border: none;
+}
+
+.input-block .icon{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+/**/
+.row-all{
+    display: flex;
+    gap: var(--lg-space);
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    padding: var(--lg-space) 0;
+    scroll-snap-type: x mandatory;
+    scroll-snap-points-x: repeat(250px);
+}
+
+.product-card.small .wrapper{
+    display: none;
+}
+
+/*header*/
+.hero{
+    
+}
+
+.hero .img-wrapper{
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+@media screen and (min-width: 1024px){
+    body .hero .img-wrapper img{
+        height: auto;
+        width: 100%;
+    }
+}
+
+.hero .img-wrapper img{
+    height: 100%;
+}
+
+
+.hero .call{
+    width: 1128px;
+    padding: var(--xlg-space);
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 900;
+}

@@ -38,9 +38,20 @@
                     </div>
                 </ul>
             </nav>
+            <section class="hero">
+                <figure class="img-wrapper">
+                    <img src="images/header.jfif"/>
+                </figure>
+            </section>
         </header>
+        <section class="search">
+            <div class="input-block">
+                <i class="fas fa-search icon"></i>
+                <input type="text" placeholder="Tente: x bacon">
+            </div>
+        </section>
         <section class="products-section">
-            <h1>Mais pedidos</h1>
+            <h1>Ofertas do dia</h1>
             <div class="row">
                 <div class="product-card">
                     <div class="wrapper">
@@ -109,48 +120,56 @@
                 </div>
             </div>
         </section>
+        <section class="primary">
+            <div class="products-section">
+                <h1>Mais pedidos</h1>
+                <div class="row">
+                    <div class="product-card">
+                        <div class="wrapper">
+                            <img src="images/amburg.jpg" class="image"/>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h1>X BURGUER</h1>
+                                <h2>R$ 15.00</h2>
+                            </div>
+                            <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
+                            <button class="primary w-full">ADICIONAR AO CARRINHO</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="wrapper">
+                            <img src="images/amburg.jpg" class="image"/>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h1>X BURGUER</h1>
+                                <h2>R$ 15.00</h2>
+                            </div>
+                            <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
+                            <button class="primary w-full">ADICIONAR AO CARRINHO</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="wrapper">
+                            <img src="images/amburg.jpg" class="image"/>
+                        </div>
+                        <div class="info">
+                            <div>
+                                <h1>X BURGUER</h1>
+                                <h2>R$ 15.00</h2>
+                            </div>
+                            <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
+                            <button class="primary w-full">ADICIONAR AO CARRINHO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="products-section">
-            <h1>Mais pedidos</h1>
-            <div class="row">
-                <div class="product-card">
-                    <div class="wrapper">
-                        <img src="images/amburg.jpg" class="image"/>
-                    </div>
-                    <div class="info">
-                        <div>
-                            <h1>X BURGUER</h1>
-                            <h2>R$ 15.00</h2>
-                        </div>
-                        <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
-                        <button class="primary w-full">ADICIONAR AO CARRINHO</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="wrapper">
-                        <img src="images/amburg.jpg" class="image"/>
-                    </div>
-                    <div class="info">
-                        <div>
-                            <h1>X BURGUER</h1>
-                            <h2>R$ 15.00</h2>
-                        </div>
-                        <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
-                        <button class="primary w-full">ADICIONAR AO CARRINHO</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="wrapper">
-                        <img src="images/amburg.jpg" class="image"/>
-                    </div>
-                    <div class="info">
-                        <div>
-                            <h1>X BURGUER</h1>
-                            <h2>R$ 15.00</h2>
-                        </div>
-                        <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
-                        <button class="primary w-full">ADICIONAR AO CARRINHO</button>
-                    </div>
-                </div>
+            <h1>Todos</h1>
+            <div class="row-all" id="all-products">
+                
             </div>
         </section>
     </main>
@@ -169,13 +188,38 @@
     </footer>
 
     <script>
-        const toggler = document.querySelector("#nav-toggler")
-        const navMobile = document.querySelector(".mobile-menu")
+        const product = `
+                <div class="product-card small">
+                    <div class="wrapper">
+                        <img src="images/amburg.jpg" class="image"/>
+                    </div>
+                    <div class="info">
+                        <div>
+                            <h1>X BURGUER</h1>
+                            <h2>R$ 15.00</h2>
+                        </div>
+                        <p>Cebola alho, tal coisa, tal coisa, tal coisa</p>
+                        <button class="primary w-full"><i class="fas fa-shopping-cart"></i> ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+        `
+    </script>
+    <script>
+        const toggler = document.querySelector("#nav-toggler");
+        const navMobile = document.querySelector(".mobile-menu");
 
         toggler.onclick = () => {
             if (navMobile.classList.contains('active')) navMobile.classList.remove('active')
             else navMobile.classList.add('active')
-        }
+        };
+
+        const allProducts = document.querySelector("#all-products");
+        for (let i = 0; i < 15; i++){
+            allProducts.innerHTML = allProducts.innerHTML+product
+        };
+
+
+
 
     </script>
 </body>
