@@ -69,11 +69,10 @@ nav ul li a:hover{
 nav .mobile-menu{
     position: absolute;
     width: 85%;
-    top: 0;
+    top: 85px;
 }
 
 nav .mobile-menu div{
-    transform: translateY(45%);
     transform-origin: top;
     padding: 0;
     display: flex;
@@ -106,6 +105,16 @@ section > h1,
 .primary{
     background-color: var(--color-primary);
     color: #fff;
+}
+
+.secundary{
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.clear-link{
+    color: inherit;
+    text-decoration: none;
 }
 
 .w-full{
@@ -143,3 +152,4 @@ button:hover{
     width: 100vw;
     height: 100vh;
 }
+

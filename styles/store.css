@@ -78,6 +78,12 @@
     width: 100%;
     overflow: hidden;
     max-height: 0;
+    transition: 0.2s;
+}
+
+.buy-footer.active{
+    max-height: 100px;
+    overflow: visible;
 }
 
 .buy-footer > div{
@@ -136,15 +142,31 @@ section input{
     scroll-snap-points-x: repeat(250px);
 }
 
+.row::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+    height: 5px;
+  }
+  
+  .row::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .row::-webkit-scrollbar-thumb {
+    background-color: darkgray;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: none;  /* creates padding around scroll thumb */
+  }
+.product-card.small{
+    flex-grow: 1;
+}
+
 .product-card.small .wrapper{
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
 }
 
 /*header*/
-.hero{
-    
-}
-
 .hero .img-wrapper{
     width: 100%;
     overflow: hidden;

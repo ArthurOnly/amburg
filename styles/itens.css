@@ -1,0 +1,57 @@
+.itens{
+    width: 100%;
+    max-width: 1128px;
+    margin: auto;
+    padding: var(--xxlg-space) var(--lg-space);
+}
+
+.card-checkout{
+    display: flex;
+    gap: var(--lg-space);
+    border-bottom: 1px solid #fff;
+    padding: var(--lg-space) 0;
+}
+
+.card-checkout figure{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.card-checkout h1{
+    font-size: 24px;
+}
+
+.card-checkout h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+}
+
+.card-checkout p{
+    margin-top: var(--md-space);
+}
+
+.card-checkout figure img{
+    height: 100%;
+}
+
+.card-checkout .selector{
+    margin-top: var(--lg-space);
+}
+.card-checkout .selector button,
+.card-checkout .selector input{
+    width: 50px;
+    height: 50px;
+}
+
+.bottom-info{
+    margin-top: var(--lg-space);
+    display: flex;
+    gap: var(--lg-space);
+    flex-direction: column;
+}
+
+.bottom-info p{
+    font-size: 18px;
+}
