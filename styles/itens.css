@@ -1,3 +1,12 @@
+@media screen and (min-width: 1024px){
+    body .itens{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: var(--lg-space);
+        justify-content: flex-end;
+    }
+}
+
 .itens{
     width: 100%;
     max-width: 1128px;
@@ -38,6 +47,11 @@
 
 .card-checkout .selector{
     margin-top: var(--lg-space);
+}
+
+.card-checkout input{
+    font-size: 18px;
+    text-align: center;
 }
 .card-checkout .selector button,
 .card-checkout .selector input{

@@ -176,10 +176,23 @@
         </section>
     </main>
 
+    <footer>
+        <section class="top">
+            <div class="social">
+                <a class="clear-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                <a class="clear-link" href="#"><i class="fab fa-instagram-square"></i></a>
+                <a class="clear-link" href="#"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </section>
+        <section class="bottom">
+            @ AMBURG 2021
+        </section>
+    </footer>
+
     <div class="buy-footer">
         <div>
             <h1>Total: <strong>R$ 27.00</strong></h1>
-            <div class="icon" onclick="window.location.href = 'localhost:5500/checkout.html'">
+            <div class="icon" onclick="goToCheckout()">
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
@@ -192,6 +205,11 @@
     <script src="../scripts/nav.js"></script>
 
     <script>
+        function goToCheckout(){
+            event.preventDefault()
+            window.location.href = 'http://127.0.0.1:5500/pages/checkout.html'
+        }
+
         const product = `
                 <div class="product-card small">
                     <div class="wrapper">
