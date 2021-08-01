@@ -5,6 +5,16 @@
         column-gap: var(--lg-space);
         justify-content: flex-end;
     }
+
+    body .card-checkout .selector button,
+    body .card-checkout .selector input{
+        width: 50px;
+        height: 50px;
+    }
+
+    body .bottom-info{
+        margin-top: 0;
+    }
 }
 
 .itens{
@@ -17,8 +27,15 @@
 .card-checkout{
     display: flex;
     gap: var(--lg-space);
-    border-bottom: 1px solid #fff;
-    padding: var(--lg-space) 0;
+    background-color: #fff;
+}
+
+.card-checkout .content{
+    padding: var(--md-space);
+}
+
+.card-checkout + .card-checkout{
+    margin-top: var(--lg-space);
 }
 
 .card-checkout figure{
@@ -55,15 +72,18 @@
 }
 .card-checkout .selector button,
 .card-checkout .selector input{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .bottom-info{
-    margin-top: var(--lg-space);
     display: flex;
     gap: var(--lg-space);
     flex-direction: column;
+    background-color: #fff;
+    padding: var(--md-space);
+    margin-top: var(--lg-space);
+    height: 170px;
 }
 
 .bottom-info p{

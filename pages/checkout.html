@@ -1,130 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css"/>
-    <link href="../node_modules/@fortawesome/fontawesome-free/js/all.js"/>
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link href="../node_modules/@fortawesome/fontawesome-free/js/all.js" />
 
-    <link rel="stylesheet" href="../styles/itens.css">
+    <link rel="stylesheet" href="../styles/itens.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-toggler">
+        <a href="store.html" class="clear-link">
+          <h2><i class="fas fa-hamburger"></i> ABURG</h2>
+        </a>
+        <h2 class="mobile-only">
+          <i class="fas fa-bars"></i>
+        </h2>
+        <ul class="desktop-only">
+          <li class="selector">
+            <a href="#"><i class="fas fa-user"></i> Perfil</a>
+            <ul>
+                <li id="nav-user">Sr(a) Arthur</li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Minhas compras</a>
+          </li>
+          <li>
+            <a href="/"><i class="fas fa-sign-out-alt"></i> Sair</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu mobile-only">
+          <div>
+            <li>
+              <a href="#"><i class="fas fa-user"></i> Perfil</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-shopping-cart"></i> Minhas compras</a
+              >
+            </li>
+            <li>
+              <a href="/"><i class="fas fa-sign-out-alt"></i> Sair</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <header>
-            <nav id="nav-toggler">
-                <a href="store.html" class="clear-link">
-                    <h2>
-                        <i class="fas fa-hamburger"></i> ABURG
-                    </h2>    
-                </a>              
-                <h2 class="mobile-only">
-                    <i class="fas fa-bars"></i>
-                </h2>
-                <ul class="desktop-only">
-                    <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Minhas compras</a></li>
-                    <li><a href="/"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
-                </ul>
-                <ul class="mobile-menu mobile-only">
-                    <div>
-                        <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Minhas compras</a></li>
-                        <li><a href="/"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
-        <section class="itens">
-            <div class="all">
-                <div class="card-checkout">
-                    <figure>
-                        <img src="../images/amburg.jpg">
-                    </figure>
-                    <div class="content">
-                        <h1>X BURGUER</h1>
-                        <h2>R$ 15.00</h2>
-                        <p>Coisa coisa coisa coisa</p>
-                        <div class="selector">
-                            <button class="primary down">-</button>
-                            <input value="1"/>
-                            <button class="primary up">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-checkout">
-                    <figure>
-                        <img src="../images/amburg.jpg">
-                    </figure>
-                    <div class="content">
-                        <h1>X BURGUER</h1>
-                        <h2>R$ 15.00</h2>
-                        <p>Coisa coisa coisa coisa</p>
-                        <div class="selector">
-                            <button class="primary down">-</button>
-                            <input value="1"/>
-                            <button class="primary up">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-checkout">
-                    <figure>
-                        <img src="../images/amburg.jpg">
-                    </figure>
-                    <div class="content">
-                        <h1>X BURGUER</h1>
-                        <h2>R$ 15.00</h2>
-                        <p>Coisa coisa coisa coisa</p>
-                        <div class="selector">
-                            <button class="primary down">-</button>
-                            <input value="1"/>
-                            <button class="primary up">+</button>
-                        </div>
-                    </div>
-                </div>
+      <section class="itens">
+        <div class="all">
+          <div class="card-checkout">
+            <figure>
+              <img src="../images/amburg.jpg" />
+            </figure>
+            <div class="content">
+              <h1>X BURGUER</h1>
+              <h2>R$ 15.00</h2>
+              <p>Coisa coisa coisa coisa</p>
+              <div class="selector">
+                <button class="primary down">-</button>
+                <input value="1" />
+                <button class="primary up">+</button>
+              </div>
             </div>
-            <div class="bottom-info">
-                <p><strong>Subtotal:</strong> R$ 15.00</p>
-                <p><strong>Frete:</strong> R$ 0.00</p>
-                <p><strong>Total:</strong> R$ 15.00</p>
-                <button class="primary w-full">Checkout</button>
+          </div>
+          <div class="card-checkout">
+            <figure>
+              <img src="../images/amburg.jpg" />
+            </figure>
+            <div class="content">
+              <h1>X BURGUER</h1>
+              <h2>R$ 15.00</h2>
+              <p>Coisa coisa coisa coisa</p>
+              <div class="selector">
+                <button class="primary down">-</button>
+                <input value="1" />
+                <button class="primary up">+</button>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="card-checkout">
+            <figure>
+              <img src="../images/amburg.jpg" />
+            </figure>
+            <div class="content">
+              <h1>X BURGUER</h1>
+              <h2>R$ 15.00</h2>
+              <p>Coisa coisa coisa coisa</p>
+              <div class="selector">
+                <button class="primary down">-</button>
+                <input value="1" />
+                <button class="primary up">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-info">
+          <p><strong>Subtotal:</strong> R$ 15.00</p>
+          <p><strong>Frete:</strong> R$ 0.00</p>
+          <p><strong>Total:</strong> R$ 15.00</p>
+          <button class="primary w-full">Checkout</button>
+        </div>
+      </section>
+    </main>
     <footer>
-
+      <section class="top">
+        <div class="social">
+          <a class="clear-link" href="#"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a class="clear-link" href="#"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a class="clear-link" href="#"
+            ><i class="fab fa-whatsapp-square"></i
+          ></a>
+        </div>
+      </section>
+      <section class="bottom">@ AMBURG 2021</section>
     </footer>
 
     <script src="../scripts/nav.js"></script>
     <script>
-        const cards = document.querySelectorAll(".card-checkout");
+      const cards = document.querySelectorAll(".card-checkout");
 
-        cards.forEach(card => {
-            const up = card.querySelector(".up")
-            const down = card.querySelector(".down")
-            const text = card.querySelector("input")
+      cards.forEach((card) => {
+        const up = card.querySelector(".up");
+        const down = card.querySelector(".down");
+        const text = card.querySelector("input");
 
-            up.onclick = () => {
-                text.value = Number(text.value) + 1
-            }
-            down.onclick = () => {
-                const actual = Number(text.value)
+        up.onclick = () => {
+          text.value = Number(text.value) + 1;
+        };
+        down.onclick = () => {
+          const actual = Number(text.value);
 
-                if (actual > 1){
-                    text.value = Number(text.value) - 1
-                    return
-                }
-                
-                const remove = confirm("Deseja remover do carrinho?")
-                if (remove)
-                    card.remove()
-            }
-        })
+          if (actual > 1) {
+            text.value = Number(text.value) - 1;
+            return;
+          }
+
+          const remove = confirm("Deseja remover do carrinho?");
+          if (remove) card.remove();
+        };
+      });
     </script>
-</body>
+  </body>
 </html>

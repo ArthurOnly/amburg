@@ -1,5 +1,10 @@
 const toggler = document.querySelector("#nav-toggler");
 const navMobile = document.querySelector(".mobile-menu");
+const navUser = document.querySelector("#nav-user")
+
+console.log(sessionStorage.getItem("username"))
+
+navUser.innerHTML = "Sr(a) " + sessionStorage.getItem("username")
 
 toggler.onclick = () => {
   if (navMobile.classList.contains("active"))

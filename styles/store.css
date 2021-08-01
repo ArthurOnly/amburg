@@ -71,6 +71,7 @@
 /*buy*/
 .buy-footer{
     background-color: var(--color-primary);
+    filter: brightness(110%);
     color: #fff;
     display: flex;
     position: fixed;
